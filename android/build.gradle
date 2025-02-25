@@ -24,24 +24,27 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    if (project.android.hasProperty("namespace")) {
-        namespace "com.cindyu.all_sensors"
-    }
+    namespace "com.workese.all_sensors"
+
     compileSdkVersion 34
 
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 16
         targetSdkVersion 34
         multiDexEnabled true    
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     
     lintOptions {
         disable 'InvalidPackage'
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
     }
 }
