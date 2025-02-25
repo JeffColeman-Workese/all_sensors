@@ -14,7 +14,6 @@ import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.embedding.android.FlutterActivity;
 import io.flutter.plugin.common.BinaryMessenger;
 import io.flutter.plugin.common.EventChannel;
-
 import static android.content.Context.POWER_SERVICE;
 
 /** AllSensorsPlugin */
